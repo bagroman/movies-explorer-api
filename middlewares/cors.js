@@ -1,6 +1,6 @@
 const allowedCors = [
-  //'http://bagroman.mesto.nomorepartiesxyz.ru',
-  //'https://bagroman.mesto.nomorepartiesxyz.ru',
+  'http://bagro.movies.nomoredomains.xyz',
+  'https://bagro.movies.nomoredomains.xyz',
   'http://localhost:3000',
 ];
 
