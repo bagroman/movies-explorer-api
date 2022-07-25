@@ -31,6 +31,8 @@ module.exports.updateUser = (req, res, next) => {
     .catch((err) => {
       if (err.name === 'ValidationError' || err.name === 'CastError') {
         next(new ValidationError('Некорректный id'));
+      } else if (err.code === 11000) {
+        next(new ExistEmailError('Пользователь с таким email уже существует'));
       } else {
         next(err);
       }
